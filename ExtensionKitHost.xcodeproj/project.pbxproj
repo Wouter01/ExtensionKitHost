@@ -7,19 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C20AE9E293C6289007614C7 /* XPCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20AE9D293C6289007614C7 /* XPCClient.swift */; };
+		6C20AEB5293D51FA007614C7 /* EntitlementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20AEB4293D51FA007614C7 /* EntitlementsView.swift */; };
+		6C20AEB8293D6DA8007614C7 /* ConcurrencyPlus in Frameworks */ = {isa = PBXBuildFile; productRef = 6C20AEB7293D6DA8007614C7 /* ConcurrencyPlus */; };
 		6C3C4497293C3E8B00C02FEF /* ExtensionKitHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C4496293C3E8B00C02FEF /* ExtensionKitHostApp.swift */; };
 		6C3C4499293C3E8B00C02FEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C4498293C3E8B00C02FEF /* ContentView.swift */; };
 		6C3C449B293C3E8D00C02FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C449A293C3E8D00C02FEF /* Assets.xcassets */; };
 		6C3C449E293C3E8D00C02FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C449D293C3E8D00C02FEF /* Preview Assets.xcassets */; };
+		6C3C44A9293C3F1D00C02FEF /* codeedit.kit.extension.appextensionpoint in Copy ExtensionPoints */ = {isa = PBXBuildFile; fileRef = 6C3C44A5293C3EB500C02FEF /* codeedit.kit.extension.appextensionpoint */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6C3C44AA293C3F1D00C02FEF /* codeedit.kit.uiextension.appextensionpoint in Copy ExtensionPoints */ = {isa = PBXBuildFile; fileRef = 6C3C44A6293C3EB500C02FEF /* codeedit.kit.uiextension.appextensionpoint */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6C3C44AE293C43F800C02FEF /* ExtensionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C44AD293C43F800C02FEF /* ExtensionWindow.swift */; };
+		6C3C44B0293C444800C02FEF /* ExtensionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C44AF293C444800C02FEF /* ExtensionList.swift */; };
+		6C3C44B2293C44B200C02FEF /* ExtensionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C44B1293C44B200C02FEF /* ExtensionManager.swift */; };
+		6C3C44B4293C468200C02FEF /* CEExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C44B3293C468200C02FEF /* CEExtension.swift */; };
+		6C3C44B6293C481900C02FEF /* ExtensionActivatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C44B5293C481900C02FEF /* ExtensionActivatorView.swift */; };
+		6C97A0D3293C584200D3E18C /* ExtensionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97A0D2293C584200D3E18C /* ExtensionSettings.swift */; };
+		6C97A0D5293C588E00D3E18C /* ExtensionHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97A0D4293C588E00D3E18C /* ExtensionHostView.swift */; };
+		6C97A0D9293C5C0700D3E18C /* CodeEditKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6C97A0D8293C5C0700D3E18C /* CodeEditKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6C3C44A8293C3F1300C02FEF /* Copy ExtensionPoints */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				6C3C44A9293C3F1D00C02FEF /* codeedit.kit.extension.appextensionpoint in Copy ExtensionPoints */,
+				6C3C44AA293C3F1D00C02FEF /* codeedit.kit.uiextension.appextensionpoint in Copy ExtensionPoints */,
+			);
+			name = "Copy ExtensionPoints";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6C20AE9D293C6289007614C7 /* XPCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCClient.swift; sourceTree = "<group>"; };
+		6C20AEB4293D51FA007614C7 /* EntitlementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementsView.swift; sourceTree = "<group>"; };
 		6C3C4493293C3E8B00C02FEF /* ExtensionKitHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtensionKitHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3C4496293C3E8B00C02FEF /* ExtensionKitHostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionKitHostApp.swift; sourceTree = "<group>"; };
 		6C3C4498293C3E8B00C02FEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C3C449A293C3E8D00C02FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3C449D293C3E8D00C02FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C3C449F293C3E8D00C02FEF /* ExtensionKitHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtensionKitHost.entitlements; sourceTree = "<group>"; };
+		6C3C44A5293C3EB500C02FEF /* codeedit.kit.extension.appextensionpoint */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = codeedit.kit.extension.appextensionpoint; sourceTree = "<group>"; };
+		6C3C44A6293C3EB500C02FEF /* codeedit.kit.uiextension.appextensionpoint */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = codeedit.kit.uiextension.appextensionpoint; sourceTree = "<group>"; };
+		6C3C44AB293C404A00C02FEF /* CodeEditKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CodeEditKit; sourceTree = "<group>"; };
+		6C3C44AD293C43F800C02FEF /* ExtensionWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionWindow.swift; sourceTree = "<group>"; };
+		6C3C44AF293C444800C02FEF /* ExtensionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionList.swift; sourceTree = "<group>"; };
+		6C3C44B1293C44B200C02FEF /* ExtensionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionManager.swift; sourceTree = "<group>"; };
+		6C3C44B3293C468200C02FEF /* CEExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEExtension.swift; sourceTree = "<group>"; };
+		6C3C44B5293C481900C02FEF /* ExtensionActivatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionActivatorView.swift; sourceTree = "<group>"; };
+		6C97A0D2293C584200D3E18C /* ExtensionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSettings.swift; sourceTree = "<group>"; };
+		6C97A0D4293C588E00D3E18C /* ExtensionHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHostView.swift; sourceTree = "<group>"; };
+		6C97A0D6293C5C0300D3E18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +68,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C20AEB8293D6DA8007614C7 /* ConcurrencyPlus in Frameworks */,
+				6C97A0D9293C5C0700D3E18C /* CodeEditKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C20AEB9293F8737007614C7 /* ExtensionPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				6C3C44AF293C444800C02FEF /* ExtensionList.swift */,
+				6C3C44AD293C43F800C02FEF /* ExtensionWindow.swift */,
+				6C97A0D2293C584200D3E18C /* ExtensionSettings.swift */,
+				6C20AEB4293D51FA007614C7 /* EntitlementsView.swift */,
+				6C97A0D4293C588E00D3E18C /* ExtensionHostView.swift */,
+				6C3C44B5293C481900C02FEF /* ExtensionActivatorView.swift */,
+			);
+			path = ExtensionPreferences;
+			sourceTree = "<group>";
+		};
 		6C3C448A293C3E8B00C02FEF = {
 			isa = PBXGroup;
 			children = (
+				6C3C44AB293C404A00C02FEF /* CodeEditKit */,
 				6C3C4495293C3E8B00C02FEF /* ExtensionKitHost */,
 				6C3C4494293C3E8B00C02FEF /* Products */,
+				6C97A0D7293C5C0700D3E18C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +110,14 @@
 		6C3C4495293C3E8B00C02FEF /* ExtensionKitHost */ = {
 			isa = PBXGroup;
 			children = (
+				6C97A0D6293C5C0300D3E18C /* Info.plist */,
+				6C3C44A7293C3EC500C02FEF /* ExtensionPoints */,
+				6C20AEB9293F8737007614C7 /* ExtensionPreferences */,
 				6C3C4496293C3E8B00C02FEF /* ExtensionKitHostApp.swift */,
 				6C3C4498293C3E8B00C02FEF /* ContentView.swift */,
+				6C20AE9D293C6289007614C7 /* XPCClient.swift */,
+				6C3C44B1293C44B200C02FEF /* ExtensionManager.swift */,
+				6C3C44B3293C468200C02FEF /* CEExtension.swift */,
 				6C3C449A293C3E8D00C02FEF /* Assets.xcassets */,
 				6C3C449F293C3E8D00C02FEF /* ExtensionKitHost.entitlements */,
 				6C3C449C293C3E8D00C02FEF /* Preview Content */,
@@ -69,6 +133,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6C3C44A7293C3EC500C02FEF /* ExtensionPoints */ = {
+			isa = PBXGroup;
+			children = (
+				6C3C44A5293C3EB500C02FEF /* codeedit.kit.extension.appextensionpoint */,
+				6C3C44A6293C3EB500C02FEF /* codeedit.kit.uiextension.appextensionpoint */,
+			);
+			path = ExtensionPoints;
+			sourceTree = "<group>";
+		};
+		6C97A0D7293C5C0700D3E18C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,12 +159,17 @@
 				6C3C448F293C3E8B00C02FEF /* Sources */,
 				6C3C4490293C3E8B00C02FEF /* Frameworks */,
 				6C3C4491293C3E8B00C02FEF /* Resources */,
+				6C3C44A8293C3F1300C02FEF /* Copy ExtensionPoints */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ExtensionKitHost;
+			packageProductDependencies = (
+				6C97A0D8293C5C0700D3E18C /* CodeEditKit */,
+				6C20AEB7293D6DA8007614C7 /* ConcurrencyPlus */,
+			);
 			productName = ExtensionKitHost;
 			productReference = 6C3C4493293C3E8B00C02FEF /* ExtensionKitHost.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 6C3C448A293C3E8B00C02FEF;
+			packageReferences = (
+				6C20AEB6293D6DA8007614C7 /* XCRemoteSwiftPackageReference "ConcurrencyPlus" */,
+			);
 			productRefGroup = 6C3C4494293C3E8B00C02FEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +227,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C97A0D3293C584200D3E18C /* ExtensionSettings.swift in Sources */,
+				6C97A0D5293C588E00D3E18C /* ExtensionHostView.swift in Sources */,
 				6C3C4499293C3E8B00C02FEF /* ContentView.swift in Sources */,
+				6C3C44B2293C44B200C02FEF /* ExtensionManager.swift in Sources */,
 				6C3C4497293C3E8B00C02FEF /* ExtensionKitHostApp.swift in Sources */,
+				6C3C44AE293C43F800C02FEF /* ExtensionWindow.swift in Sources */,
+				6C20AE9E293C6289007614C7 /* XPCClient.swift in Sources */,
+				6C3C44B0293C444800C02FEF /* ExtensionList.swift in Sources */,
+				6C3C44B4293C468200C02FEF /* CEExtension.swift in Sources */,
+				6C3C44B6293C481900C02FEF /* ExtensionActivatorView.swift in Sources */,
+				6C20AEB5293D51FA007614C7 /* EntitlementsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +371,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExtensionKitHost/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +399,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExtensionKitHost/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +435,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C20AEB6293D6DA8007614C7 /* XCRemoteSwiftPackageReference "ConcurrencyPlus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChimeHQ/ConcurrencyPlus";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C20AEB7293D6DA8007614C7 /* ConcurrencyPlus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C20AEB6293D6DA8007614C7 /* XCRemoteSwiftPackageReference "ConcurrencyPlus" */;
+			productName = ConcurrencyPlus;
+		};
+		6C97A0D8293C5C0700D3E18C /* CodeEditKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CodeEditKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C3C448B293C3E8B00C02FEF /* Project object */;
 }

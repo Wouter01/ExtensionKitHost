@@ -13,5 +13,7 @@ struct ExtensionKitHostApp: App {
         WindowGroup {
             ContentView()
         }
+
+        ExtensionWindow()
     }
 }
