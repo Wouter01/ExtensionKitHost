@@ -72,23 +72,38 @@ public struct GeneralSettingsScene<Content: View>: SettingsScene {
         self.content = content
     }
 
+    var connection: NSXPCConnection?
+    var environmentWrapper = EnvironmentPublisher()
+
     public var body: some AppExtensionScene {
         PrimitiveAppExtensionScene(id: sceneID.id) {
-            Form {
-                content()
+            GeneralSettingsView(environmentWrapper: environmentWrapper) {
+                Form {
+                    content()
+                }
+                .formStyle(.grouped)
             }
-            .formStyle(.grouped)
         } onConnection: { connection in
-            // TODO: Configure the XPC connection and return true
+            connection.exportedInterface = .init(with: EnvironmentPublisherObjc.self)
+            connection.exportedObject = environmentWrapper
+            connection.resume()
+
             return true
         }
     }
 }
 
+struct GeneralSettingsView<Content: View>: View {
 
-/////////////////
-///
-///
+    @StateObject var environmentWrapper: EnvironmentPublisher
+    @ViewBuilder var content: Content
+
+    var body: some View {
+        content
+            .environment(\._ceEnvironment, environmentWrapper.environment)
+//            .animation(.spring(), value: environmentWrapper.environment)
+    }
+}
 
 @_spi(CodeEditInternal)
 public struct DefaultSettingsExtension: SettingsExtension, Codable {

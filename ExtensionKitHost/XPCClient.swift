@@ -8,7 +8,6 @@
 import Foundation
 import ExtensionFoundation
 @_spi(CodeEditInternal) import CodeEditKit
-import sXPC
 
 enum XPCError: Error, CustomStringConvertible {
     case communicationError

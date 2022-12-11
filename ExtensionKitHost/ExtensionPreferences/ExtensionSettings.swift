@@ -36,6 +36,10 @@ struct ExtensionSettings: View {
                 ExtensionHostView(with: ext)
                     .navigationTitle(ext.localizedName)
                     .navigationSubtitle(ext.bundleIdentifier)
+                    .accentColor(enabled ? .blue : .red)
+//                    .ceEnvironment(\.complexValue, enabled ? ["Halloeee"] : [])
+//                    .ceEnvironment(\.testkey, enabled)
+//                    .ceEnvironment(\.testkey2, !enabled)
                     .toolbar {
                         ToolbarItem(placement: .primaryAction) {
                             Toggle("", isOn: $enabled)

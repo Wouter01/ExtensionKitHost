@@ -8,10 +8,14 @@
 import Foundation
 
 @propertyWrapper
-struct Encoded<T: Encodable> {
-    var wrappedValue: T
+public struct Encoded<T: Encodable> {
+    public var wrappedValue: T
 
-    var errorDescription: String? {
+    public init(wrappedValue: T) {
+        self.wrappedValue = wrappedValue
+    }
+
+    public var errorDescription: String? {
         do {
             _ = try JSONEncoder().encode(wrappedValue)
             return nil
@@ -20,16 +24,20 @@ struct Encoded<T: Encodable> {
         }
     }
 
-    var projectedValue: Data? {
+    public var projectedValue: Data? {
         try? JSONEncoder().encode(wrappedValue)
     }
 }
 
 @propertyWrapper
-struct Decoded<T: Decodable> {
-    var wrappedValue: Data
+public struct Decoded<T: Decodable> {
+    public var wrappedValue: Data
 
-    var errorDescription: String? {
+    public init(wrappedValue: Data) {
+        self.wrappedValue = wrappedValue
+    }
+
+    public var errorDescription: String? {
         do {
             _ = try JSONDecoder().decode(T.self, from: wrappedValue)
             return nil
@@ -38,7 +46,7 @@ struct Decoded<T: Decodable> {
         }
     }
 
-    var projectedValue: T? {
+    public var projectedValue: T? {
         try? JSONDecoder().decode(T.self, from: wrappedValue)
     }
 }
